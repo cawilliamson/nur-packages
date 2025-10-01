@@ -50,7 +50,7 @@ python3Packages.buildPythonPackage rec {
     description = "Adjustor TDP plugin for Handheld Daemon";
     platforms = lib.platforms.linux;
     license = lib.licenses.gpl3Only;
-    maintainers = with maintainers; [ toast ];
+    maintainers = with lib.maintainers; [ toast ];
     mainProgram = "hhd";
   };
 }
