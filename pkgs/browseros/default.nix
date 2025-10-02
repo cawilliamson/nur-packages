@@ -1,15 +1,14 @@
-{
-  appimageTools,
-  fetchurl,
-  lib,
-  makeDesktopItem,
-  stdenv,
-  ...
+{ appimageTools
+, fetchurl
+, lib
+, makeDesktopItem
+, stdenv
+, ...
 }:
 
 let
   pname = "browseros";
-  version = "0.25.0";
+  version = "0.26.0";
 
   desktopItem = makeDesktopItem {
     name = "${pname}";
@@ -25,7 +24,7 @@ let
 
   src = fetchurl {
     name = "browseros.AppImage";
-    sha256 = "sha256-Tgx6NylEea/zGODT/+6QfZX5ipVXguNNURa1vHilHSM=";
+    sha256 = "sha256-D7TGAusSrYyCcuLIlYONrd0v+hCekzaaPI2og2Y9DkY=";
     url = "https://github.com/browseros-ai/BrowserOS/releases/download/v${version}/BrowserOS_v${version}_x64.AppImage";
   };
 
