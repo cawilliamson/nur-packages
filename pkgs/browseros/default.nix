@@ -8,7 +8,7 @@
 
 let
   pname = "browseros";
-  version = "0.26.0";
+  version = "0.26.1";
 
   desktopItem = makeDesktopItem {
     name = "${pname}";
